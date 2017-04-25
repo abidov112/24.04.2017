@@ -1,0 +1,17 @@
+1.Samir M?llimin d?rsl?rinin hans? labda ke?il?c?yini ??xartmal?
+SELECT teachers.full_name,labs.name
+FROM groups
+INNER JOIN labs ON groups.lab_id=labs.id
+INNER JOIN teachers ON groups.teacher_id=teachers.id
+WHERE groups.teacher_id=2
+
+2.Hefte sonu ke?irilen derslerin siyahasi ?ixartmali
+
+SELECT *
+FROM groups
+INNER JOIN seances ON groups.seance_id=seances.id
+INNER JOIN courses ON groups.course_id=courses.id
+WHERE seances.id=3
+3.Programlasdirmaya aid ?demeleri ?ixartmali
+
+relationsu qura bilmedim.3u arasinda
